@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://browserbench.org/MotionMark/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <title>MotionMark 1.0</title>
+
+    <link rel="stylesheet" href="./MotionMark 1.0_files/animometer.css">
+
+    <script src="./MotionMark 1.0_files/strings.js" defer=""></script>
+    <script src="./MotionMark 1.0_files/extensions.js" defer=""></script>
+    <script src="./MotionMark 1.0_files/statistics.js" defer=""></script>
+
+    <script src="./MotionMark 1.0_files/tests.js" charset="utf-8" defer=""></script>
+    <script src="./MotionMark 1.0_files/animometer.js" defer=""></script>
+
+    <script src="./MotionMark 1.0_files/benchmark-runner.js" defer=""></script>
+
+    <script>
+        window.addEventListener("load", function() {
+            // Start the fade in animation.
+            document.body.classList.add("images-loaded");
+        });
+    </script>
+</head>
+<body class="images-loaded medium showing-results" style="">
+    <main>
+        <section id="intro" class="">
+            <svg class="logo"><use xlink:href="resources/runner/logo.svg#root"></use></svg>
+            <div class="body">
+                <p>MotionMark is a graphics benchmark that measures a browser’s capability to animate complex scenes at a target frame rate.</p>
+
+                <p><a href="http://browserbench.org/MotionMark/about.html">More details</a> about the benchmark are available. Bigger scores are better.</p>
+                <p>For accurate results, please take your browser window full screen, or rotate your device to landscape orientation.</p>
+                <p class="portrait-orientation-check"><b>Please rotate your device.</b></p>
+                <button class="landscape-orientation-check" onclick="benchmarkController.startBenchmark()">Run Benchmark</button>
+            </div>
+        </section>
+
+        <section id="test-container" class="frame-container"></section>
+
+        <section id="results" class="selected">
+            <svg class="logo"><use xlink:href="resources/runner/logo.svg#root"></use></svg>
+            <div class="body">
+                <div class="score-container">
+                    <div class="score">216.99</div>
+                    <div class="confidence">±10.98%</div>
+                    <div class="detail">
+                        <span class="small">on a small screen (phone)</span>
+                        <span class="medium">on a medium screen (laptop, tablet)</span>
+                        <span class="large">on a large screen (desktop)</span>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <div>
+                        <table id="results-score"><thead><tr><th>Score</th></tr></thead><tbody><tr><td class="suites-separator"></td></tr><tr><td>383.70</td></tr><tr><td>253.83</td></tr><tr><td>383.43</td></tr><tr><td>704.90</td></tr><tr><td>3180.60</td></tr><tr><td>43.22</td></tr><tr><td>60.28</td></tr><tr><td>47.60</td></tr><tr><td>102.73</td></tr></tbody></table>
+                        <table id="results-data"><thead><tr><th>&nbsp;</th></tr></thead><tbody><tr><td class="suites-separator"></td></tr><tr><td><span>±2.47%</span></td></tr><tr><td><span>±47.84%</span></td></tr><tr><td><span>±2.42%</span></td></tr><tr><td><span>±1.42%</span></td></tr><tr><td><span>±0.48%</span></td></tr><tr><td><span>±2.48%</span></td></tr><tr><td><span>±16.87%</span></td></tr><tr><td><span>±3.58%</span></td></tr><tr><td><span>±17.74%</span></td></tr></tbody></table>
+                    </div>
+                    <table id="results-header"><thead><tr><th><span onclick="benchmarkController.showDebugInfo()">Test Name</span></th></tr></thead><tbody><tr><td class="suites-separator"></td></tr><tr><td>Multiply</td></tr><tr><td>Canvas Arcs</td></tr><tr><td>Leaves</td></tr><tr><td>Paths</td></tr><tr><td>Canvas Lines</td></tr><tr><td>Focus</td></tr><tr><td>Images</td></tr><tr><td>Design</td></tr><tr><td>Suits</td></tr></tbody></table>
+                </div>
+                <button onclick="benchmarkController.startBenchmark()">Test Again</button>
+            </div>
+        </section>
+    </main>
+
+
+</body></html>
